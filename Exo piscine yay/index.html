@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Projet plage</title>
+</head>
+<body>
+    <div id="debut">
+    <div> <h2>Une partie de pierre-feuille-ciseau?</h2></div>
+
+ <div> <p>choisissez : </p>
+</div>
+    <div class="d-flex flex-row justify-content-around">
+        <img class="imagechoix" src="img/pierre.PNG" onclick="choixJoueur(id)" id="pierre" >
+        <img class="imagechoix" src="img/ciseau.PNG" onclick="choixJoueur(id)" id="ciseau" >
+        <img class="imagechoix" src="img/feuille.PNG" onclick="choixJoueur(id)"  id="feuille" >
+    </div>
+
+<div class="d-flex flex-row"> 
+    <div class="choixjoueur">
+    <p id ="choix">votre choix : </p>
+        <img id="choixjoueur"> 
+    </div>
+    <span id="versus"> <img src="img/versus.png" ></span>
+
+    <div class="choixordi"><p id=choixorditxt >choix : ordinateur  </p>
+        <img id="choixordinateur"> </div>
+    </div>
+    <div id ="score">
+        <div id="resultat"> </div>
+        <div class="d-flex flex-row justify-content-around">
+        <span>
+            <p> Vos point : </p>
+            <p id="pointjoueur"> </p>
+
+        </span>
+        <span>
+            <p> Point ordinateur: </p>
+            <p id="pointordi"></p>
+            
+        </span>
+        </div>
+    </div>
+    <button id="reset" onclick="resetForm()">Reset</button> 
+
+    <script src="js/script.js">
+    </script>
+    </div>
+</body>
+</html>
