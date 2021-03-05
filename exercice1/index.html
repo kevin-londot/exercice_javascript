@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Projet plage</title>
+</head>
+<body>
+    <div id="debut">
+        <p> selectionne un nombre en 0 et 10: </p>
+        <form name="formnumber">
+        <input type="number" id="number" name="number" min="0" max="10" required="true">
+        <input type="button" name="bouton" id="envoyer" VALUE="Envoyer" onclick="test_nombre_trouver(number.value)">
+        </form>
+        <p id="resultat"></p>
+        <p>voici votre liste de choix :</p>
+
+        <p id="liste_essai"></p>
+
+    <script src="js/script.js">
+    </script>
+    </div>
+</body>
+</html>

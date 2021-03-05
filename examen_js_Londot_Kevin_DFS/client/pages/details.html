@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link rel="stylesheet" href="../style/style.css">
+  <title>Document</title>
+</head>
+<body>
+  <form action="#" name="form">
+    <div class="row">
+      <div class="col-6">
+        <div class="form-group">
+            <label for="id">id</label>
+            <input type="number" class="form-control" id="id" >
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="form-group">
+            <label for="name">nom du familier</label>
+            <input type="text" class="form-control" id="name" >
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-6">
+        <div class="form-group">
+            <label for="level">niveau du familier</label>
+            <input type="number" class="form-control" id="level" min="1" max="200" >
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="type">Type</label>
+        <select class="form-control" id="type">
+        <option>Familier</option>
+        <option>Monture</option>
+        <option>Une bonne grosse dragodinde</option>
+        </select>
+    </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <div class="form-group">
+            <label for="description">description du familier</label>
+            <textarea class="form-control" id="description" rows="4"></textarea>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="text-center">
+        <button type="submit" class="btn btn-primary" id="btn">Submit</button>
+    </div>
+  </form>
+  <script src="../js/script2.js"></script>
+</body>
+</html>
